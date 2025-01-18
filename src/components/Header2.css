@@ -1,0 +1,43 @@
+.menu-bar i{
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+.header-navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.header-navbar-icons span{
+  color: white;
+  font-size: 20px;
+  font-family: "Lato";
+}
+.header-navbar-icons{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    /* display: none; */
+  }
+  .header-navbar-icons-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border: 1px solid var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  display: none;
+  }
+.header-navbar-icons img{
+    width: 35px;
+    display: none;
+  }
+
+  .header-navbar{
+    display: none;
+  }
