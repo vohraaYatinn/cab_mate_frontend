@@ -9,7 +9,7 @@ import moneycash from '../../assets/money.svg'
 import bg_for_all from '../../assets/bg_for_all.png'
 
 // import mailimg from '../../assets/mail.svg'
-import axios from 'axios';
+
 import './Booking.css'
 import { useNavigate } from 'react-router-dom';
 const Booking = () => {
@@ -43,14 +43,7 @@ const Booking = () => {
 
   const handleSubmit = async () => {
     navigate('/payment')
-    try {
-      const response = await axios.post('https://your-backend-url/api/booking', formData);
-      alert('Form submitted successfully!');
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-      // alert('Failed to submit the form. Please try again.');
-    }
+ 
   };
 
   const [selectedIndex, setSelectedIndex] = useState(0);
