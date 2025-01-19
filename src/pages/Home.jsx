@@ -22,9 +22,12 @@ import Vector2 from '../assets/vector2.png'
 import TestimonialCarousel from '../components/TestimonialCarousel'
 import { countrydata } from "../components/countrydata";
 import { Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <main className='w-screen overflow-x-hidden'>
       {/* <Header /> */}
@@ -110,7 +113,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="sm:w-1/2 w-full flex items-center justify-end">
-                <button className="px-4 py-3 w-full bg-customLightBlue text-white rounded-md hover:bg-blue-600">Explore Cabs</button>
+                <button className="px-4 py-3 w-full bg-customLightBlue text-white rounded-md hover:bg-blue-600" 
+                onClick={()=>{
+                  navigate("/booking");
+                }}
+                >Explore Cabs</button>
               </div>
             </div>
           </div>

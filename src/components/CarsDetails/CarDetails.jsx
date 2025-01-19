@@ -393,7 +393,7 @@ borderBottomLeftRadius:expandedCarIndex === index ?"":ipad ?"20px":''
        
         
         >
-       <Link to={'/booking'}>
+       <Link to={'/payment'}>
        select 
        </Link>
         </div>
